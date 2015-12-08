@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-Project: A program that converts from bas 2 to base 10 and viceversa 
+Project: A program that converts from base 2 to base 10 and viceversa 
 
 @author: Igor Fala
 
