@@ -38,3 +38,4 @@ def pi2(n):
     
     else:
         print ' %.*f' % (n, math.pi)
+if __name__ == "__main__": print __doc__
