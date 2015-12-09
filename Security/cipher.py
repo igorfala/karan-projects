@@ -27,13 +27,6 @@ class Caesar(object):
             
             decoded += alphabet[j]
         return decoded    
-        
-        """
-        liberty 8667693799
-        
-        8778865066 massa dep public utility
-        confirmation number 1-1276760901
-        """
 
     def encode1(self, str, shift):
         result = ''
