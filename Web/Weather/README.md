@@ -1,4 +1,4 @@
-Project: Fetch Current Weather
+Project: Fetch Current Weather\n
          To use it, import the [weather](https://github.com/igorfala/karan-projects/blob/master/Web/Weather/weather.py), or
          or [weather1](https://github.com/igorfala/karan-projects/blob/master/Web/Weather/weather1.py) ,and
          call the : weather() function.
