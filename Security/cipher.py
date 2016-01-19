@@ -1,49 +1,50 @@
 
 class Caesar(object):
-    
+
     def encode(self, string, shift):
-        
         encoded = ''
-        alphabet = 'abcdefghijklmnopqrstuvwxyz'
+        alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\
+         !,.?-+@#$%^&*()=0123456789""'
         for s in string:
             for i in xrange(0,len(alphabet)):
                 if s == alphabet[i]:
                     j = i + shift
-                    break
-            if j > len(alphabet):
+                    break     # Break out of the second loop, to increase speed
+            if j >= len(alphabet):
                 j = j % len(alphabet)
             encoded += alphabet[j]
-        return encoded    
-        
+        return encoded
+
     def decode(self, string, shift):
-        
         decoded = ''
-        alphabet = 'abcdefghijklmnopqrstuvwxyz'
+        alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\
+         !,.?-+@#$%^&*()=0123456789""'
         for s in string:
             for i in xrange(0,len(alphabet)):
                 if s == alphabet[i]:
                     j = i - shift
-                    break
-            
+                    break     # Break out of the second loop, to increase speed
             decoded += alphabet[j]
-        return decoded    
+        return decoded
 
-    def encode1(self, str, shift):
+    def encode1(self, str, shift): 
         result = ''
         for i in str:
-            result += chr((ord(i) + shift)) 
+            result += chr(ord(i) + shift) 
         return result
-    def decode(self, str, shift):
+
+    def decode1(self, str, shift):
         result = ''
         for i in str:
             result += chr(ord(i) - shift)
         return result
 
 class Vigenere(object):
-    
+
     def encode(self, str, passcode):
         encoded = ''
-        alphabet = 'abcdefghijklmnopqrstuvwxyz'
+        alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\
+         !,.?-+@#$%^&*()=0123456789""'
         for i in range(len(str)):
             for j in xrange(0,len(alphabet)):
                 if str[i] == alphabet[j]:
@@ -58,10 +59,11 @@ class Vigenere(object):
             else:
                 encoded += str[i]
         return encoded
-            
+
     def decode(self, str, passcode):
         decoded = ''
-        alphabet = 'abcdefghijklmnopqrstuvwxyz'
+        alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\
+         !,.?-+@#$%^&*()=0123456789""'
         for i in range(len(str)):
             for j in xrange(0,len(alphabet)):
                 if str[i] == alphabet[j]:
@@ -76,13 +78,13 @@ class Vigenere(object):
             else:
                 decoded += str[i]
         return decoded
-    
+
     def encode1(self, str, passcode):
         encoded = ''
         for i in range(len(str)):
             encoded += chr(ord(str[i]) + ord(passcode[i % len(passcode)]))
         return encoded
-    
+
     def decode1(self, str, passcode):
         decoded = ''
         for i in range(len(str)):
