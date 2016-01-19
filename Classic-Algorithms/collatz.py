@@ -2,6 +2,10 @@
 Collatz Conjecture. The program calculates the steps
 it takes to reach 1, starting with the number given as input 
 to function collatz(n)
+
+@author: Igor Fala
+
+date: 12/08/2015
 """
 def collatz(n):
     """Takes in a number n and returns a tuple of:
