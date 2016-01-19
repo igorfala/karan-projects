@@ -4,6 +4,8 @@ To use it, import [scraper](https://github.com/igorfala/karan-projects/blob/mast
 call the : linkScraper(URL,DB) function.
 or imageScraper(URL, DB), where URL is the Uniform Resource Locator and
 DB is the database where the results will be saved. (e.g. DB.sqlite in this case)
+In order to save all the images in IMAGES directory, call imageDownload(DB) 
+only after calling imageScraper() method
 
 @author: Igor Fala
 
