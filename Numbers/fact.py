@@ -28,3 +28,6 @@ def fact_recurs(n):
         return 1
     else:
         return n * fact_recurs(n-1)
+
+if __name__ == '__main__':
+    print __doc__
