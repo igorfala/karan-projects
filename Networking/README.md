@@ -10,7 +10,7 @@
 
 [**Country from IP Lookup**](https://github.com/igorfala/karan-projects/blob/master/Networking/iplookup.py) - Enter an IP address and find the country that IP is registered in. Optional: Find the Ip automatically.
 
-**Whois Search Tool** - Enter an IP or host address and have it look it up through whois and return the results to you.
+[**Whois Search Tool**](https://github.com/igorfala/karan-projects/blob/master/Networking/whois.py) - Enter an IP or host address and have it look it up through whois and return the results to you.
 
 **Site Checker with Time Scheduling** - An application that attempts to connect to a website or server every so many minutes or a given time and check if it is up. If it is down, it will notify you by email or by posting a notice on screen.
 
