@@ -2,7 +2,7 @@
 """
 Project: FizzBuzz
 
-@author: Igor Fala
+author: Igor Fala
 
 date: 12/07/2015
 """
