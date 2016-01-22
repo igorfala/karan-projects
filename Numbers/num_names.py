@@ -3,7 +3,7 @@
 Project: Numbers to words. To use it, import num_names from num_names
          and call num_names(n). n can be float up to 999,999,999,999.99
 
-@author: Igor Fala
+author: Igor Fala
 
 date: 12/08/2015
 """

@@ -3,7 +3,7 @@
 Project: Calculate e up to n'th digit . 
 To use it:import the module e and call e.calc_e(n)
 
-@author: Igor Fala
+author: Igor Fala
 
 Date: 12/08/2015
 

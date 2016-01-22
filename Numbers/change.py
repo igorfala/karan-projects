@@ -2,7 +2,7 @@
 """
 Project: A program that returns the exact change 
 
-@author: Igor Fala
+author: Igor Fala
 
 date: 12/05/2015
 """

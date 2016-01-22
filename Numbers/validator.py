@@ -4,7 +4,7 @@
 A credit card validator function that uses a checksum.
 Luhn formula is used to verify whether the card is valid or not
 
-@author: Igor Fala
+author: Igor Fala
 
 date: 12/08/2015
 """

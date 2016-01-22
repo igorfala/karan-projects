@@ -9,7 +9,7 @@ Project: Exponentiation with different methods
         The last 2 methods perform the operation
         with the speed O(lg(n)).
 
-@author: Igor Fala
+author: Igor Fala
 date: 07/07/2015
 
 """

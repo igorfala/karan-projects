@@ -2,7 +2,7 @@
 """
 Project: A program that converts from base 2 to base 10 and viceversa 
 
-@author: Igor Fala
+author: Igor Fala
 
 date: 12/07/2015
 """

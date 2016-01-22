@@ -5,7 +5,7 @@ Factorial Finder:
     call: fact_loop(n) 
     or  : fact_recurs(n)
 
-@author: Igor Fala
+author: Igor Fala
 date: 11/07/2015
 """
 

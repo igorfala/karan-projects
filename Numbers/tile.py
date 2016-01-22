@@ -2,7 +2,7 @@
 """
 Project: A program that calculates the cost of buying tiles to cover the area needed
 
-@author: Igor Fala
+author: Igor Fala
 
 date: 12/07/2015
 """

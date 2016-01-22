@@ -2,7 +2,7 @@
 """
 Coin flip simulations
 
-@author: Igor Fala
+author: Igor Fala
 
 date: 12/10/2015
 """

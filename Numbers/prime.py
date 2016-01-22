@@ -4,7 +4,7 @@ Project: Display the list of all prime factors of a number: prime(n)
          Find the sequence of all prime numbers up to number n: eratosthenes(n)
          Display the next prime number starting with number n: next_prime(n) 
 
-@author: Igor Fala
+author: Igor Fala
 
 date: 12/07/2015
 """

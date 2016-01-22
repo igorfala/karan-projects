@@ -5,7 +5,7 @@ Project: Calculate n'th Fibonacci number: fib_rec(n), fib_loop(n)
          Generate the sequence to the n'th Fibonacci number: fib(n)
          Generate the sequence up to n'th Fibonacci number: fib_to_seq(n) 
 
-@author: Igor Fala
+author: Igor Fala
 
 date: 12/08/2015
 """

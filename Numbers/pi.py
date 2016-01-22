@@ -2,7 +2,7 @@
 """
 Project: Calculate pi up to n'th digit 
 
-@author: Igor Fala
+author: Igor Fala
 
 Implementation of "Nilakantha series" to calculate Pi up to n'th digit: pi(n)
 Implementation by importing the math module and calling it's methods: pi2(n)
