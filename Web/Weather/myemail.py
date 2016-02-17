@@ -8,7 +8,7 @@ def myemail(receiver, subject, text):
     password = raw_input('Please enter your email password:   ')
     try:
         smtpObj = smtplib.SMTP('smtp.gmail.com', 587)
-        message = "\n Subject: %s\n\n\n%s" %( subject, text.encode('utf-8')) 
+        message = "Subject: %s\n%s" %( subject, text.encode('utf-8')) 
         smtpObj.starttls()
         smtpObj.login(sender, password)
         smtpObj.sendmail(sender, receivers, message)

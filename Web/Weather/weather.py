@@ -7,7 +7,7 @@ Project: Fetch Current Weather
          needs to be string. If weather() is called with no 
          arguments, it determines your location automatically.
          
-@author: Igor Fala
+author: Igor Fala
 
 date: 01/08/2016
 """

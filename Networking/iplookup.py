@@ -5,7 +5,7 @@ ipLookUp: A simple script that determines info about the ip given.
 
 author: Igor Fala
 
-date: 01/17/2015
+date: 01/17/2016
 
 """
 

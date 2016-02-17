@@ -13,6 +13,6 @@ import subprocess, sys
 try:
     ipAddress = sys.argv[1]
 except:
-    ipAddress = raw_input('Enter an ip address to search WHOIS\t')
+    ipAddress = raw_input('Enter an ip address to search WHOIS:\t')
 
 subprocess.call(['whois', ipAddress])

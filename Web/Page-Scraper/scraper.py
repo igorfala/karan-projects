@@ -50,13 +50,15 @@ def imageScraper(URL, DB):
     DROP TABLE IF EXISTS Images''')
     cur.execute('''
     CREATE TABLE Images (source TEXT)''')
-    URL = urlopen(URL)
-    html = URL.read()
-    URL.close()
+    fsock = urlopen(URL)
+    html = fsock.read()
+    fsock.close()
     soup = BeautifulSoup(html, 'html.parser')  
     imgs = soup('img')
     for img in imgs:
-        cur.execute("SELECT source FROM Images WHERE source= ?", (img.get('src', None), ))
+        src = img.get('src', None)
+        if src.startswith('/'): src = URL + src  # Getting the full path from relative 
+        cur.execute("SELECT source FROM Images WHERE source= ?", (src, ))
         try:
             data = cur.fetchone()[0]
             print "Found in database ",img
@@ -64,7 +66,7 @@ def imageScraper(URL, DB):
         except:
             pass
         cur.execute('''INSERT INTO Images (source) 
-            VALUES ( ? )''', ( img.get('src', None), ) )
+            VALUES ( ? )''', ( src, ) )
         conn.commit()
     cur.close()
     

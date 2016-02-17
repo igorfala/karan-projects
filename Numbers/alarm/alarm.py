@@ -16,7 +16,6 @@ import os
 import subprocess, signal
 
 def process(sound = 'alarm.wav'):
-
     '''Determines what system is running on and uses the appropriate command
        to start a process to play a sound: 'alarm.wav' by default'''
     import sys
