@@ -23,7 +23,7 @@ def spell(n):
         print "zero",
     else:
         if n > 99:
-            print " %s hundreed" % names[n//100],
+            print "%s hundreed" % names[n//100],
             n = n % 100
         if n >= 20:
             print teens[n//10], names[int(n % 10)],
@@ -101,4 +101,6 @@ def num_names(n):
     if n < 1000:
         if n >= 1:
             spell(int(n))
+        else:
+            print 'zero',
         dec(n) 
